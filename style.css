@@ -27,6 +27,14 @@ body, html {
 
 }
 
+.logo {
+  transition: 0.3s ease; 
+}
+
+.logo:hover {
+  transform: scale(1.25);
+}
+
 .section {
   display: grid;
   grid-area: auto;
