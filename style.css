@@ -6,6 +6,7 @@ body, html {
   font-size: 20px;
   line-height: 2em;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .pimage1, .pimage2, .pimage3, .pimage4 {
@@ -15,16 +16,25 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pimage1 {
   background-image: url(images/presetbase-lightroom-presets-4ELcmuV3osk-unsplash.jpg);
   background-size: 100%;
   min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
 
+.arrow {
+  transform: translateY(100px) scale(0.25);
+  transition: 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateY(100px) scale(0.5);
 }
 
 .logo {
@@ -73,6 +83,13 @@ body, html {
   background-image: url(images/background2.jpg);
   background-size: 100%;
   min-height: 40%;
+  
+}
+
+.text {
+  font-size: 40px;
+  color: rgb(253, 253, 253);
+  text-shadow: 3px 3px rgb(49, 50, 51);
 }
 
 .pimage3 {
